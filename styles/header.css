@@ -1,0 +1,38 @@
+.headerContainer {
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* margin-bottom: -6vw; */
+    padding: 0;
+    padding-left: var(--padding-sides);
+    padding-bottom: var(--padding);
+    overflow: hidden;
+}
+
+.headerWrapper {
+    flex: 1;
+    min-width: 500px;
+    /* min-height: 50vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--padding-inner);
+    background-color: var(--altBackground);
+    z-index: 20;
+}
+
+.headerWrapper h2 {
+    margin-top: auto;
+}
+
+.headerWrapper:first-of-type {
+    border-radius: 0 0 0 10vw;
+}
+
+.headerWrapper span {
+    margin-top: auto;
+  }

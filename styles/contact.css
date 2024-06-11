@@ -1,0 +1,148 @@
+.contactContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: var(--padding) var(--padding-sides);
+    padding-top: 0px;
+    background-color: var(--text-accent);
+}
+
+.contactWrapper {
+    flex: 1;
+    width: 75%;
+    padding: var(--padding-inner);
+    background-color: var(--altBackground);
+    border-radius: 0 10vw 10vw 10vw;
+    color: var(--text-accent);
+}
+
+.no_padding {
+    padding: 0;
+}
+
+.no_border-radius {
+    border-radius: 0;
+}
+
+.contactWrapper h2 {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 3vw;
+}
+
+.contactMessageWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding);
+    height: 100%;
+    width: auto;
+    background-color: var(--text-accent);
+    border-radius: 0 10vw 0 0;
+    text-align: center;
+}
+
+.contactMessage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25vw;
+    width: 25vw;
+    margin: auto;
+    padding: var(--padding);
+    background-color: var(--text-accent);
+    border-radius: 50%;
+}
+
+/* form styles */
+
+form {
+    width: 75%;
+    margin: auto;
+}
+
+.contactInputWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.contactInput {
+    display: flex;
+    flex-direction: column;
+    height: 25px;
+}
+
+.label {
+    width: 200px;
+    min-width: 50%;
+    margin-right: auto;
+
+}
+
+textarea {
+    width: 100%;
+}
+
+form button {
+    height: 3vw;
+    color: var(--altBackground);
+    border-radius: 50px;
+}
+
+.submit {
+    margin-right: auto;
+    background-color: #26C485;
+    width: 9vw;
+}
+
+.clear {
+    float: right;
+    background-color: #DB5461;
+    width: 6vw;
+}
+
+
+.socialList {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding: 6vw;
+    padding-bottom: 0vw;
+  }
+  
+.socialList-item {
+    margin: auto;
+    position: relative;
+  }
+  
+.hoverImage-wrapper {
+    margin: auto;
+  }
+  
+.hoverImage {
+    position: relative;
+    height: 3vw;
+    width: 3vw;
+    z-index: 2;
+  }
+  
+.mailBlue,
+.fbBlue,
+.ghBlue,
+.phoneBlue,
+.mailRed,
+.fbRed,
+.ghRed,
+.phoneRed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 75%;
+  }

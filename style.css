@@ -1,0 +1,98 @@
+
+.dot {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: opacity 0.5s linear;
+  z-index: 10000;
+} 
+
+ul {
+  padding-left: 20px;
+}
+
+.spacer {
+  height: 1px;
+  width: 100%;
+  margin: 0px;
+  border: black 1px solid;
+}
+
+.spacer_red {
+    height: 1px;
+  width: 100%;
+  margin: 0px;
+  border: #FF000066 1px solid;
+}
+
+.spacer_blue {
+    height: 1px;
+  width: 100%;
+  margin: 0px;
+  border: #00FFFF66 1px solid;
+}
+
+/* button stylings */
+.button-wrapper {
+  position: relative;
+  display: inline-block;
+  margin: auto;
+}
+
+.visit-button {
+  background-color: #FFFFFF00;
+  border: 5px solid #333333;
+  border-radius: 5px;
+  color: #333;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 2;
+  position: relative;
+  transition: color 0.3s ease;
+  margin-top: 25px;
+}
+
+.shape {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+  margin-top: 25px;
+  border-radius: 5px;
+}
+
+.shape-blue {
+  border: none;
+}
+
+.shape-red {
+  border: none;
+}
+
+/* RED AND BLUE SLIDER SHAPES ANIMATIONS */
+
+.button-wrapper:hover .shape-red {
+  border: #FF0000 5px solid;
+  left: 2px;
+}
+
+.button-wrapper:hover .shape-blue {
+  border: #00FFFF 5px solid;
+  right: 2px;
+}
+
+.project-codeLink {
+  margin: auto;
+}
+
+
+
+footer {
+  background-color: var(--background);
+  padding: 10px;
+  text-align: center;
+}

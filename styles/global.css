@@ -1,0 +1,124 @@
+
+
+
+:root {
+    --primaryOne: #FF0000;
+    --primaryTwo: #00FFFF;
+    --background: #FFFFFF;
+    --altBackground: #F5F5F5;
+    --text-accent: #333333;
+    --padding: 9vw;
+    --padding-inner: 6vw;
+    --padding-sides: 3vw;
+    --margin: 5vw;
+  }
+
+  * {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    line-height: 1.1;
+    background-color: var(--altBackground);
+  }
+
+  
+  h1 {
+    font-size: 4em;
+    margin-top: 25px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: auto;
+  }
+
+  h2 {
+    width: auto;
+    margin-top: auto;
+    margin-bottom: 0px;
+    text-align: left;
+    font-size: 2.5em;
+  }
+
+  h3 {
+    min-width: 30%;
+    margin-right: 20px;
+    margin-top: 25px;
+    font-size: 2em;
+  }
+
+  h4 {
+    min-width: 100%;
+    text-align: center;
+    margin: 15px auto;
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+    width: 100%;
+    max-width: none;
+    margin: auto;
+    margin-top: 25px;
+  }
+  
+  p em {
+    font-weight: bold;
+  }
+
+  svg {
+    width: 10vw; /* Circle and SVG width */
+    height: 10vw; /* Circle and SVG height */
+}
+
+  /* Removers */
+  .no_padding {
+    padding-top: 0px;
+  }
+
+  /* modifiers */
+  .width-25 {
+    width: 25%;
+  }
+
+  /* backgrounds for the sections (necessary for design) */
+
+  .bg-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background-color: var(--text-accent);
+    border-radius: 0 0 0 10vw;
+  }
+
+  .white {
+    background-color: var(--altBackground);
+    border: red 2px;
+    border-radius: none;
+    z-index: 1;
+  }
+
+  .bg-right {
+    position: absolute;
+    top: -9vw;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background-color: var(--text-accent);
+    border-radius: 0 10vw 0 0;
+  }
+
+  .bg-inner {
+    height: 100%;
+    width: 100%;
+    background-color: var(--text-accent);
+    border-radius: 0 100px 0 0;
+    z-index: 2;
+  }
