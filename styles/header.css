@@ -7,7 +7,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* margin-bottom: -6vw; */
     padding: 0;
     padding-left: var(--padding-sides);
     padding-bottom: var(--padding);
@@ -17,7 +16,6 @@
 .headerWrapper {
     flex: 1;
     min-width: 500px;
-    /* min-height: 50vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,7 +53,11 @@
 
     .headerWrapper {
         min-width: 100%;
+        margin-top: -10px;
+    }
 
+    .headerWrapper:first-of-type {
+        margin-top: 0;
     }
 
     .headerWrapper p {

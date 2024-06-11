@@ -25,7 +25,6 @@
     margin: auto;
     height: 5vw;
     color: var(--altBackground);
-    font-size: 3em;
 }
 
 .projectOuter {
@@ -69,7 +68,7 @@
 
   @media screen and (max-width:510px) {
     .projectsWrapper h2 {
-        top: -8vw;
+        top: -10vw;
         left: 12vw;
         margin: auto;
         height: 5vw;
