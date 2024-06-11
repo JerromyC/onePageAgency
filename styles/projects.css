@@ -20,7 +20,7 @@
 
 .projectsWrapper h2 {
     position: absolute;
-    top: -4vw;
+    top: -6vw;
     left: 12vw;
     margin: auto;
     height: 5vw;
@@ -65,4 +65,15 @@
     top: 0;
     left: 0;
     transition: top 8s linear; /* Adjust time for slower or faster scrolling */
+  }
+
+  @media screen and (max-width:510px) {
+    .projectsWrapper h2 {
+        top: -8vw;
+        left: 12vw;
+        margin: auto;
+        height: 5vw;
+        color: var(--altBackground);
+        font-size: 2em;
+    }
   }

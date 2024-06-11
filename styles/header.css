@@ -1,6 +1,7 @@
 .headerContainer {
     position: relative;
-    width: 100%;
+    width: 100vw;
+    height: auto;
     min-height: 50vh;
     display: flex;
     flex-direction: row;
@@ -35,4 +36,29 @@
 
 .headerWrapper span {
     margin-top: auto;
+  }
+
+  @media screen and (max-width:1031px) {
+    .headerWrapper {
+        border-radius: 0 0 0 10vw;
+    }
+    
+    .headerWrapper:first-of-type {
+        border-radius: 0 0 0 0;
+    }
+  }
+
+  @media screen and (max-width:510px) {
+    .services {
+        text-align: center;
+    }
+
+    .headerWrapper {
+        min-width: 100%;
+
+    }
+
+    .headerWrapper p {
+        margin-left: 0px;
+      }
   }
