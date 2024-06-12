@@ -7,10 +7,12 @@
     --background: #FFFFFF;
     --altBackground: #F5F5F5;
     --text-accent: #333333;
-    --padding: 9vw;
-    --padding-inner: 6vw;
-    --padding-sides: 3vw;
+    --padding: 6rem;
+    --padding-inner: 6rem;
+    --padding-sides: 2rem;
     --margin: 5vw;
+
+    font-size: 16pt;
   }
 
   * {
@@ -26,6 +28,7 @@
     overflow-x: hidden;
     line-height: 1.1;
     background-color: var(--altBackground);
+    text-wrap: wrap;
   }
 
   
@@ -107,7 +110,7 @@
 
   .bg-right {
     position: absolute;
-    top: -9vw;
+    top: -6rem;
     right: 0;
     height: 100%;
     width: 50%;
@@ -124,13 +127,6 @@
   }
 
   @media screen and (max-width:510px) {
-    :root {
-      --padding: 12vw;
-      --padding-inner: 6vw;
-      --padding-sides: 3vw;
-      --margin: 5vw;
-    }
-
     h1 {
       font-size: 3em;
     }
@@ -148,6 +144,6 @@
     }
 
     .bg-right {
-      top: -12vw;
+      top: -20vw;
     }
   }

@@ -35,59 +35,6 @@ ul {
 }
 
 /* button stylings */
-.button-wrapper {
-  position: relative;
-  display: inline-block;
-  margin: auto;
-}
-
-.visit-button {
-  background-color: #FFFFFF00;
-  border: 5px solid #333333;
-  border-radius: 5px;
-  color: #333;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  z-index: 2;
-  position: relative;
-  transition: color 0.3s ease;
-  margin-top: 25px;
-}
-
-.shape {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  z-index: 1;
-  margin-top: 25px;
-  border-radius: 5px;
-}
-
-.shape-blue {
-  border: none;
-}
-
-.shape-red {
-  border: none;
-}
-
-/* RED AND BLUE SLIDER SHAPES ANIMATIONS */
-
-.button-wrapper:hover .shape-red {
-  border: #FF0000 5px solid;
-  left: 2px;
-}
-
-.button-wrapper:hover .shape-blue {
-  border: #00FFFF 5px solid;
-  right: 2px;
-}
-
-.project-codeLink {
-  margin: auto;
-}
 
 
 
