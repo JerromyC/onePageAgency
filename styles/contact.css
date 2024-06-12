@@ -11,7 +11,7 @@
 .contactWrapper {
     flex: 1;
     width: 75%;
-    padding: var(--padding-inner);
+    padding: var(--padding);
     background-color: var(--altBackground);
     border-radius: 0 10vw 10vw 10vw;
     color: var(--text-accent);

@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     height: auto;
-    padding-right: var(--padding-sides);
+    padding-right: var(--paddingHalf);
     background-color: var(--text-accent);
 }
 
@@ -10,18 +10,19 @@
     position: relative;
     height: 100%;
     width: 100%;
+    padding: var(--paddingHalf);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: var(--altBackground);
-    border-radius: 0 10vw 10vw 0;
+    border-radius: 0 var(--radius) var(--radius) 0;
     z-index: 10;
 }
 
 .projectsWrapper h2 {
     position: absolute;
-    top: -6vw;
-    left: 12vw;
+    top: calc(var(--negPadding)/1.5);
+    left: calc(var(--padding) + var(--paddingHalf));
     margin: auto;
     height: 5vw;
     color: var(--altBackground);
@@ -34,7 +35,7 @@
 }
 
 .projectInner {
-    padding: var(--padding-inner);
+    padding: var(--paddingHalf);
 }
 
 .projectImageContainer {
@@ -75,7 +76,7 @@
   .visit-button {
     background-color: #FFFFFF00;
     border: 5px solid #333333;
-    border-radius: 5px;
+    border-radius: var(--radius);
     color: #333;
     padding: 10px 20px;
     font-size: 16px;
@@ -93,7 +94,7 @@
     width: 100%;
     z-index: 1;
     margin-top: 25px;
-    border-radius: 5px;
+    border-radius: var(--radius);
   }
   
   .shape-blue {
@@ -120,20 +121,14 @@
     margin: auto;
   }
 
-  @media screen and (max-width:1031px) {
-    .projectsWrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        background-color: var(--altBackground);
-        border-radius: 0 10vw 10vw 0;
-        z-index: 10;
+  @media screen and (max-width:1045px) {
+.visit-button {
+        min-width: 100%
     }
 
-    .visit-button {
-        min-width: 100%
+    .projectsWrapper {
+        justify-content: center;
+        align-items: center;
     }
   }
 

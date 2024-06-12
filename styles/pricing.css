@@ -13,7 +13,7 @@
 .pricingWrapper {
     position: relative;
     width: 75%;
-    padding: var(--padding-inner);
+    padding: var(--padding);
     background-color: var(--altBackground);
     border-radius: 10vw 10vw 0 10vw;
 }
