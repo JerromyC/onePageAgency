@@ -67,13 +67,14 @@
 
   .button-wrapper {
     position: relative;
-    display: block;
+    display: flex;
     margin: auto;
     width: 100%;
     border: 1px solid red;
   }
   
   .visit-button {
+    width: 75%;
     background-color: #FFFFFF00;
     border: 5px solid #333333;
     border-radius: var(--radius);
@@ -122,10 +123,6 @@
   }
 
   @media screen and (max-width:1045px) {
-.visit-button {
-        min-width: 100%
-    }
-
     .projectsWrapper {
         justify-content: center;
         align-items: center;
@@ -137,7 +134,7 @@
         margin-bottom: -1px;
     }
 
-    .projectsWrapper h2 {
+    /* .projectsWrapper h2 {
         width: 100%;
         top: -10vw;
         left: 0;
@@ -145,5 +142,5 @@
         height: 5vw;
         font-size: 2em;
         text-align: center;
-    }
+    } */
   }
