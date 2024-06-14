@@ -32,6 +32,7 @@
   @media screen and (max-width:1045px) {
     .headerContainer {
         flex-direction: column;
+        padding-bottom: calc(var(--padding)*2);
     }
 
     .headerWrapper {

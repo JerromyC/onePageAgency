@@ -100,19 +100,27 @@
     margin: auto;
 }
 
-@media screen and (min-width: 510px) and (max-width:1045px) {
+@media screen and (max-width:1045px) {
+  .pricingContainer {
+    padding-top: calc(var(--padding)*2);
+  }
+
   .pricingWrapper {
-    width: 80%;
+    width: 100%;
   }
 
   .pricingWrapper:last-of-type {
       width: 20%;
   }
+
+  .pricingWrapper h2 {
+    top: calc(var(--negPadding)*1.5);
+  }
 }
 
 @media screen and (min-width: 200px) and (max-width:650px) {
   .pricingContainer {
-    padding: var(--padding) var(--paddingHalf);
+    padding: calc(var(--padding)*2) var(--paddingHalf);
     padding-bottom: 0;
   }
 
