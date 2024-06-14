@@ -70,13 +70,12 @@
     display: flex;
     margin: auto;
     width: 100%;
-    border: 1px solid red;
   }
   
   .visit-button {
     width: 75%;
     background-color: #FFFFFF00;
-    border: 5px solid #333333;
+    border: 2px solid #333333;
     border-radius: var(--radius);
     color: #333;
     padding: 10px 20px;
