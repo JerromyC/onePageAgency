@@ -51,7 +51,7 @@
     margin: 5px;
     width: auto;
     height: auto;
-    padding: 25px;
+    padding: var(--paddingHalf);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -118,7 +118,7 @@
   }
 }
 
-@media screen and (min-width: 200px) and (max-width:650px) {
+@media screen and (max-width:650px) {
   .pricingContainer {
     padding: calc(var(--padding)*2) var(--paddingHalf);
     padding-bottom: 0;
@@ -136,5 +136,9 @@
 
   .pricingList {
     flex-direction: column;
+  }
+
+  .pricingList-item {
+    padding: 2vw;
   }
 }

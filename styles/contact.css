@@ -178,7 +178,7 @@ form button {
     }
   }
   
-  @media screen and (min-width: 200px) and (max-width:650px) {
+  @media screen and (max-width:650px) {
     .contactContainer {
         padding-top: 0;
     }
@@ -190,5 +190,11 @@ form button {
 
     .contactWrapper:first-of-type {
         display: none;
+    }
+  }
+
+  @media screen and (max-width:400px) {
+    form {
+        width: 100%;
     }
   }

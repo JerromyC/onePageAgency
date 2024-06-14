@@ -32,7 +32,7 @@
 .projectOuter {
     flex: 1;
     width: auto;
-    min-width: 300px;
+    min-width: 30vw;
     max-width: 50%;
 }
 
@@ -137,6 +137,13 @@
     .projectsWrapper h2 {
       top: calc(var(--negPadding)*1.5)
     }
+
+    .projectOuter {
+      flex: 1;
+      width: auto;
+      min-width: 40vw;
+      max-width: 50%;
+  }
   }
 
   @media screen and (max-width:510px) {
@@ -145,10 +152,16 @@
     }
 
     .projectOuter {
-        width: 100%;
-        flex: 1;
-        width: auto;
-        /* min-width: 300px; */
-        /* max-width: 50%; */
-    }
+      flex: 1;
+      width: auto;
+      min-width: 100%;
+  }
+  }
+
+  @media screen and (max-width:400px) {
+    .projectOuter {
+      flex: 1;
+      width: auto;
+      min-width: 100%;
+  }
   }

@@ -32,103 +32,21 @@
     font-size: 16pt;
     background-color: var(--altBackground);
   }
-
-  /* font styles */
-  .roboto-thin {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .roboto-light {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .roboto-medium {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .roboto-bold {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .roboto-black {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .roboto-thin-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .roboto-light-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .roboto-regular-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .roboto-medium-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  .roboto-bold-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  .roboto-black-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-  }
   
   
   h1 {
     font-size: 3rem;
-    margin-top: 25px;
-    text-align: left;
-    width: 75%;
-    margin-bottom: auto;
     font-weight: 700;
     font-style: normal;
   }
 
   h2 {
     width: auto;
-    margin-top: auto;
-    margin-bottom: 0px;
     text-align: left;
     font-size: 2rem;
   }
 
   h3 {
-    min-width: 30%;
-    margin-right: 20px;
-    margin-top: 25px;
     font-size: 1.5rem;
     font-weight: 500;
     font-style: normal;
@@ -136,8 +54,6 @@
 
   h4 {
     min-width: 100%;
-    text-align: center;
-    margin: 15px auto;
     font-size: 1.25rem;
     font-weight: 500;
     font-style: normal;
@@ -146,9 +62,6 @@
   p {
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
-    width: 100%;
-    max-width: none;
-    margin-top: 25px;
     font-weight: 400;
     font-style: normal;
   }
@@ -218,7 +131,7 @@
     }
 
     h1 {
-      font-size: 3rem;
+      font-size: 2.25rem;
     }
   
     h2 {
@@ -226,7 +139,7 @@
     }
   
     h3 {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
     }
   
     h4 {
@@ -242,13 +155,68 @@
     }
   }
 
-  @media screen and (min-width: 200px) and (max-width:510px) {
+  @media screen and (min-width: 400px) and (max-width:510px) {
     :root {
-      --padding: 2rem;
-      --negPadding: -2rem;
-      --paddingHalf: 1rem;
+      --padding: 1rem;
+      --negPadding: -1rem;
+      --paddingHalf: 0.5rem;
       --radius: 2rem;
     }
+
+    h1 {
+      font-size: 1.75rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    h3 {
+      font-size: 1.25rem;
+    }
+  
+    h4 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 0.75rem;
+    }
+
+    .bg-right {
+      top: calc(var(--negPadding)*2);
+    }
+  }
+
+  @media screen and (max-width:400px) {
+    :root {
+      --padding: 10vw;
+      --negPadding: -10vw;
+      --paddingHalf: 5vw;
+      --radius: 15vw;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-size: 12vw;
+    }
+  
+    h2 {
+      font-size: 1rem;
+    }
+  
+    h3 {
+      font-size: 1rem;
+    }
+  
+    h4 {
+      font-size: 0.75rem;
+    }
+
+    p {
+      font-size: 0.75rem;
+    }
+
     .bg-right {
       top: calc(var(--negPadding)*2);
     }

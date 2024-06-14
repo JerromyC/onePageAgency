@@ -29,6 +29,10 @@
     align-items: flex-start;
 }
 
+.headerWrapper h2,h3 {
+    margin-bottom: 5px;
+}
+
   @media screen and (max-width:1045px) {
     .headerContainer {
         flex-direction: column;
@@ -39,6 +43,7 @@
         border-radius: 0 0 0 var(--radius);
         margin-top: -1px;
         align-items: flex-start;
+        justify-content: initial;
     }
     
     .headerWrapper:first-of-type {
